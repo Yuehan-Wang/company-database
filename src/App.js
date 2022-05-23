@@ -3,6 +3,8 @@ import Home from './pages/home/Home';
 import Result from './pages/result/Result';
 import Search from './pages/search/Search';
 import Header from './shared/header/Header'
+import Footer from './shared/footer/Footer'
+import Dummy from './pages/dummy';
 function App() {
   return (
     <div>
@@ -12,7 +14,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/result" element={<Result />} />
           <Route path="/search" element={<Search />} />
+          <Route path="/dummy" element={<Dummy />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
