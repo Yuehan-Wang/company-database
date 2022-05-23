@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { Button } from "../../shared/button/Button";
-import { Checkbox } from 'antd';
+import { Radio } from 'antd';
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+    const navigate = useNavigate();
     const ColoredLine = ({ color, height }) => (
         <hr
             style={{
@@ -28,12 +30,12 @@ export default function Home() {
                 <p>Please be advised that the information contained in this database is the property of the Office of the Secretary of State for the State of Illinois. Any unauthorized use of the database, unauthorized access, removal of data, copying or downloading of the database information is prohibited by criminal statutes, including the sections covering the offenses of computer tampering and aggravated computer tampering (720 ILCS 5/16D-3; 5/16D-4). Violators will be prosecuted to the fullest extent of the law.</p>
             </div>
         <div className="flex flex-col mt-3 text-base m-1 text-[#226A32]">
-            <Checkbox>Corporate and LLC</Checkbox>
-            <Checkbox>Corporate</Checkbox>
-            <Checkbox>LLC</Checkbox>
+            <Radio>Corporate and LLC</Radio>
+            <Radio>Corporate</Radio>
+            <Radio>LLC</Radio>
         </div>
         <ColoredLine color="grey" height={1}/>
-        <div className="absolute left-0 mt-3">
+        <div className="absolute left-0 mt-3" onClick={() => {navigate('/search')}}>
         <Button />
         </div>
 
