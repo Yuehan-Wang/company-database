@@ -1,76 +1,52 @@
-import { Space, Table, Tag } from 'antd';
+import { Table } from 'antd';
 
 const columns = [
+  
   {
-    title: 'Name',
-    dataIndex: 'name',
-    key: 'name',
-    render: (text) => <a>{text}</a>,
+    title: 'Entity Type',
+    dataIndex: 'Entity',
+    key: 'Entity',
+
   },
   {
-    title: 'Age',
-    dataIndex: 'age',
-    key: 'age',
+    title: 'Company ID',
+    dataIndex: 'ID',
+    key: 'ID',
   },
   {
     title: 'Address',
     dataIndex: 'address',
     key: 'address',
   },
-  {
-    title: 'Tags',
-    key: 'tags',
-    dataIndex: 'tags',
-    render: (_, { tags }) => (
-      <>
-        {tags.map((tag) => {
-          let color = tag.length > 5 ? 'geekblue' : 'green';
 
-          if (tag === 'loser') {
-            color = 'volcano';
-          }
-
-          return (
-            <Tag color={color} key={tag}>
-              {tag.toUpperCase()}
-            </Tag>
-          );
-        })}
-      </>
-    ),
-  },
   {
-    title: 'Action',
-    key: 'action',
-    render: (_, record) => (
-      <Space size="middle">
-        <a>Invite {record.name}</a>
-        <a>Delete</a>
-      </Space>
-    ),
+    title: 'Corporation/LLC Name',
+    dataIndex: 'name',
+    key: 'name',
+    render: (text) => <a className='text-sky-500 hover:underline'>{text}</a>,
   },
 ];
 const data = [
   {
     key: '1',
-    name: 'John Brown',
-    age: 32,
+    Entity: 'LLC ASE',
+    ID: 32,
     address: 'New York No. 1 Lake Park',
-    tags: ['nice', 'developer'],
+    name: 'Startbucks',
   },
   {
     key: '2',
-    name: 'Jim Green',
-    age: 42,
+    Entity: 'LLC',
+    ID: 42,
     address: 'London No. 1 Lake Park',
-    tags: ['loser'],
+    name: 'McDonald',
   },
   {
     key: '3',
-    name: 'Joe Black',
-    age: 32,
+    Entity: 'LLC OLD',
+    ID: 32,
     address: 'Sidney No. 1 Lake Park',
-    tags: ['cool', 'teacher'],
+    name:'PizzaHut',
   },
 ];
 

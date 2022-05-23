@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Button } from "../../shared/button/Button";
-import { Radio } from 'antd';
+import { Checkbox } from 'antd';
 import { useNavigate } from "react-router-dom";
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
             }}
         />
     );
-    return (
+    return(
         <div className="absolute left-20 w-4/5 text-xl text-lime-800 justify-center items-center font-sans">
             <div className="text-[#226A32] mt-1 font-black text-5xl">
                 Get information about a company
@@ -30,9 +30,9 @@ export default function Home() {
                 <p>Please be advised that the information contained in this database is the property of the Office of the Secretary of State for the State of Illinois. Any unauthorized use of the database, unauthorized access, removal of data, copying or downloading of the database information is prohibited by criminal statutes, including the sections covering the offenses of computer tampering and aggravated computer tampering (720 ILCS 5/16D-3; 5/16D-4). Violators will be prosecuted to the fullest extent of the law.</p>
             </div>
         <div className="flex flex-col mt-3 text-base m-1 text-[#226A32]">
-            <Radio>Corporate and LLC</Radio>
-            <Radio>Corporate</Radio>
-            <Radio>LLC</Radio>
+            <Checkbox>Corporate and LLC</Checkbox>
+            <Checkbox>Corporate</Checkbox>
+            <Checkbox>LLC</Checkbox>
         </div>
         <ColoredLine color="grey" height={1}/>
         <div className="absolute left-0 mt-3" onClick={() => {navigate('/search')}}>
