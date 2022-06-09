@@ -27,13 +27,13 @@ export default function Header() {
                         </p>
                         <p 
                             className="text-xl text-white hover:underline hover:text-slate-300 m-0 cursor-pointer"
-                            onClick={() => {navigate('/dummy')}}
+                            onClick={() => {navigate('/billing')}}
                         >
                             Billings
                         </p>
                         <p 
                             className="text-xl text-white hover:underline hover:text-slate-300 m-0 cursor-pointer"
-                            onClick={() => {navigate('/dummy')}}
+                            onClick={() => {navigate('/signup')}}
                         >
                             Sign in/Sign up
                         </p>

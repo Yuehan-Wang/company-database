@@ -57,7 +57,7 @@ export default function Search() {
         />
         <ColoredLine color="grey" height={1}/>
         <div className="absolute left-0 mt-3"  onClick={() => {navigate('/result')}}>
-            <Button/>
+            <Button name = "Search"/>
         </div>
 
         </div>

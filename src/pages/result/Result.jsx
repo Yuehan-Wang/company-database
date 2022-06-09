@@ -31,7 +31,7 @@ export default function Result() {
             <Display />
         </div>
         <div className="absolute left-0 mt-3" >
-            <Button />
+            <Button name = "More"/>
             </div>
         </div>
     )

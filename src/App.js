@@ -4,6 +4,9 @@ import Result from './pages/result/Result';
 import Search from './pages/search/Search';
 import Header from './shared/header/Header'
 import Footer from './shared/footer/Footer'
+import Billing from './pages/billing/Billing';
+import Signin from './pages/signin/Signin';
+import Signup from './pages/signup/Signup';
 import Dummy from './pages/dummy';
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/result" element={<Result />} />
           <Route path="/search" element={<Search />} />
+          <Route path="/signin" element={<Signin />} /> 
+          <Route path="/signup" element={<Signup />} /> 
+          <Route path="/billing" element={<Billing />} />
           <Route path="/dummy" element={<Dummy />} />
         </Routes>
         <Footer />

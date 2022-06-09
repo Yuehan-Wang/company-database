@@ -36,7 +36,7 @@ export default function Home() {
         </div>
         <ColoredLine color="grey" height={1}/>
         <div className="absolute left-0 mt-3" onClick={() => {navigate('/search')}}>
-        <Button />
+        <Button name = "Search" />
         </div>
 
         </div>
