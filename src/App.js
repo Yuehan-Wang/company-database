@@ -7,6 +7,7 @@ import Footer from './shared/footer/Footer'
 import Billing from './pages/billing/Billing';
 import Signin from './pages/signin/Signin';
 import Signup from './pages/signup/Signup';
+import Profile from './pages/profile/Profile';
 import Dummy from './pages/dummy';
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/signin" element={<Signin />} /> 
           <Route path="/signup" element={<Signup />} /> 
           <Route path="/billing" element={<Billing />} />
+          <Route path="/profile" element={<Profile />} />
           <Route path="/dummy" element={<Dummy />} />
         </Routes>
         <Footer />
